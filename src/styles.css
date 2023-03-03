@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root
+{
+
+  --color-txt: #33011f;
+  --color-main: #f0f0f0;  /* #f2f2f2; #f2f2f2; #fbfbf9; */
+  --color-1: #e6e1e1; /*rgba(202,0,146,255); */
+  --color-1-1: rgba(165, 42, 42, 0.6);
+  --color-2: #b546a9;
+  --color-3:  #f3c1ea;
+  --color-4: rgba(241,219,236,255);
+  --color-5: #f1dbec;
+  --color-6: #f8eaf5;
+  --color-br-1: #bc5c00;
+  --color-br-2: #eda402;
+  --color-br-3: #fcc900;
+  --color-br-4: #ffcc00;
+  --color-br-5: #fad91d;
+  --color-primary: #7380ec;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info-lignt: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.64);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-danger-1: #f53645;
+  --color-blue: #2e4898;
+  --color-background: #f5f5f7;
+  --card-background: #f2f2f2;
+  --card-background-blue-light: #f2f8fc;
+  --card-background-light: #f8f8f8;
+  --border-color: #d2d2d7;
+  --text-color-dark: #6e6e73;
+  --link-color-dark: #424245;
+  --title-color-dark: #1d1d1f;
+  --title-color-dark-hover: #000;
+  --text-color-light: #f5f5f7;
+  --text-color-light-hover: #f9f9fa;
+  --card-border-radius-1: 4px;
+  --card-border-radius-2: 6px;
+  --card-border-radius-3: 10px;
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  /*--box-shadow: 0 2rem 3rem var(--color-light);*/
+  --box-shadow: 0px 1px 3px 0px rosybrown;
+  /*--box-shadow: 0px 2px 6px 0px
+  rgba(0, 0, 0, 0.2),
+  0px 1px 1px 0px rgba(0, 0, 0,0.14),
+  0px 1px 3px 0px rgba(0, 0, 0, 0.12);*/
+
+  --viewport-large-min-width: 1024px;
+
+  --viewport-medium-max-width: 1023px;
+  --viewport-medium-min-width: 768px;
+
+  --viewport-small-max-width: 767px;
+  --viewport-small-min-width: 320px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f6f6f9;
+  position: relative;
+  min-height: 90vh;
+}
+
+.main
+{
+  max-width: 1200px;
+  margin: 50px auto 60px auto;
+
+}
+
+
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .card-container > *:not(.circle-link) ,
+  .terminal {
+    width: 100%;
+  }
+
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+
+  .card.highlight-card span {
+    margin-left: 72px;
+  }
+
+  svg#rocket-smoke {
+    right: 120px;
+    transform: rotate(-5deg);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  svg#rocket-smoke {
+    display: none;
+    visibility: hidden;
+  }
+}

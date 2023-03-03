@@ -1,0 +1,41 @@
+<header>
+  <div class="top-bar">
+  <div class="burger" [ngClass]="activeMenu ? 'toggle' : ''" (click)="toggleMenu()">
+   <!-- <span></span>
+    <span></span>
+    <span></span>-->
+    <fa-icon [icon]="activeMenu ? faXmark:faBars" style=""></fa-icon>
+  </div>
+    <div class="logo" style="">
+      <div class="icon">
+        <a [routerLink]="['/home']" class="logo">
+          As<span>m</span>ar
+        </a>
+      </div>
+    </div>
+    <form class="search-form" style="">
+      <input type="text" placeholder="Recherche..." style="">
+      <button type="submit"><fa-icon [icon]="faSearch" style=""></fa-icon></button>
+    </form>
+  <hr>
+
+
+  <div class="cart" style="">
+    <a [routerLink]="['/home']"><fa-icon style="font-size: 23px" [icon]="faBagShopping"></fa-icon></a>
+  </div>
+  </div>
+  <div class="nav-bar">
+    <nav [ngClass]="activeMenu ? 'menu-active nav-active' : ''">
+<!--
+      <fa-icon style="font-size: 23px" [icon]="faHouse"></fa-icon>
+-->
+      <ul>
+        <li routerLinkActive="active"><a [routerLink]="['/home']">Alimantaires</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/parfum']">Parfums</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/soins-corps']">Soins & corps</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/vetement']">Vêtements</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/telephonie']">Téléphonie & accessoires</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
