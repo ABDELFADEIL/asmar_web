@@ -182,9 +182,9 @@ input[type="checkbox"] {
 .search-form input[type="text"] {
   flex-grow: 1;
   /*width: 100%;*/
-  border: none;
+  border: 2px solid var(--color-txt);
   height: 40px;
-  padding: 0 10px 0 40px;
+  padding: 0 40px 0 10px;
   font-size: 16px;
   border-radius: 20px;
   background: #f1f1f1;
@@ -197,16 +197,16 @@ input[type="checkbox"] {
 
 .search-form button[type="submit"] {
   position: absolute;
-  left: 0;
+  right: 0;
   border: none;
-  background: none;
+  background: var(--color-txt);
   /*background-color: var(--color-txt);*/
-  color: var(--color-txt);
+  color: var(--color-white);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding: 10px;
-  margin-right: 10px;
+  padding: 8px;
   cursor: pointer;
+  width: 45px;
 }
 
 .search-form button[type="submit"]:hover {
