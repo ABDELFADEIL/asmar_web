@@ -28,7 +28,7 @@ header hr
 }
 header .nav-bar
 {
-  background-color: var(--color-1);
+  background-color: var(--color-main-dark);
   padding: 10px;
   width: 100%;
   height: auto;
@@ -63,7 +63,7 @@ nav ul li a {
   flex-basis: 20%;
   display: flex;
   justify-content: flex-end;
-  margin-top: 10px;
+
 }
 
 .cart a {
@@ -72,29 +72,29 @@ nav ul li a {
 }
 
 nav ul li a:hover, .cart a:hover {
-  color: #551a8b /*#f6f6f9;*/
+  color: #f6f6f9;
 }
 
 
 .logo {
   flex-basis: 20%;
   text-decoration: none;
-  margin-top: 5px;
   font-size: 1.3rem;
   text-transform: uppercase;
   font-family: 'Archivo Black', sans-serif;
   font-weight: bold;
+  color: var(--color-main-dark);
 }
 .logo span {
-  color: var(--color-txt);
+  color: var(--color-gold);
   text-transform: uppercase;
   font-family: 'Bungee Inline', cursive;
   font-size: 2rem;
   text-shadow: -2px -2px #558ABB;
 }
-.cart a, .cart-menu a
-{
-  color: var(--color-txt);
+.cart a, .cart-menu a {
+  color: var(--color-main-dark);
+  font-size: 23px;
 }
 
 .burger {
@@ -115,9 +115,8 @@ header nav li
   text-align: center;
   border-radius: 4px;
 }
-.active
-{
-  background: var(--color-background);
+.active {
+  background: #03566f;
 }
 .hidde
 {
@@ -126,7 +125,7 @@ header nav li
 .burger span {
   height: 3px;
   width: 25px;
-  background-color: var(--color-txt);
+  background-color: var(--color-main-dark);
   margin: 7px 0;
   display: block;
   transition: all 0.3s ease;
@@ -170,6 +169,7 @@ input[type="checkbox"] {
   flex-basis: 70%;
   position: relative;
   margin-left: 10px;
+
 }
 .search-form fa-icon
 {
@@ -182,8 +182,8 @@ input[type="checkbox"] {
 .search-form input[type="text"] {
   flex-grow: 1;
   /*width: 100%;*/
-  border: 2px solid var(--color-txt);
-  height: 40px;
+  border: 2px solid var(--color-main-dark);
+  height: 35px;
   padding: 0 40px 0 10px;
   font-size: 16px;
   border-radius: 20px;
@@ -199,12 +199,12 @@ input[type="checkbox"] {
   position: absolute;
   right: 0;
   border: none;
-  background: var(--color-txt);
+  background: var(--color-main-dark);
   /*background-color: var(--color-txt);*/
   color: var(--color-white);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding: 8px;
+  padding: 5px;
   cursor: pointer;
   width: 45px;
 }
@@ -322,6 +322,7 @@ header .nav-bar
   {
     font-size: 25px;
   }
+
   .search-form input[type="text"] {
     padding: 0 0 0 35px;
     font-size: 14px;
@@ -329,6 +330,12 @@ header .nav-bar
     background: #f1f1f1;
     box-shadow: none;
     width: 50%;
+    height: 35px;
+  }
+
+  .search-form button[type="submit"] {
+    padding: 5px;
+
   }
 }
 
@@ -340,17 +347,16 @@ header .nav-bar
     flex-wrap: wrap;
     justify-content: flex-end;
   }
-  header .top-bar hr
-  {
+  header .top-bar hr {
     display: block;
     height: 1px;
-    background: #f2f2f2;;
+    background: var(--color-main-dark-light);
     border: none;
-    width: 110%;
+    width: 115%;
     padding-left: 0;
-    margin-left: -10px;
+    margin-left: -20px;
     padding-right: 0;
-    margin-right: -10px;
+    margin-right: -20px;
     margin-bottom: 5px;
     order: 3;
   }

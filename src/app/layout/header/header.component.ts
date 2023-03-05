@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { faCoffee, faBagShopping, faBars, faXmark, faSearch, faHouse } from '@fortawesome/free-solid-svg-icons';
+import {faBagShopping, faBars, faHouse, faSearch, faXmark} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -19,9 +19,14 @@ export class HeaderComponent implements OnInit{
     const main = document.querySelector('main') as HTMLElement;
     const nav = document.querySelector('.nav-bar') as HTMLElement;
     if (this.activeMenu){
-      main.style.marginTop = '280px';
       nav.style.padding = '10px';
       nav.style.height = 'auto';
+      if (window.innerWidth > 380) {
+        main.style.marginTop = '280px';
+      } else {
+        main.style.marginTop = '330px';
+      }
+
     }else{
       main.style.marginTop = '65px';
       nav.style.padding = '0';

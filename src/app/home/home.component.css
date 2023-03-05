@@ -50,7 +50,7 @@
   width: 48%;
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   height: 100%;
   position: relative;
   margin-top: 20px;
@@ -87,9 +87,8 @@
 {
   margin: 10px auto 0 auto;
 }
-.description h3
-{
-  color: var(--color-txt);
+.description h3 {
+  color: var(--color-main-dark);
   font-size: 1.5rem;
 }
 .article .description button
@@ -146,9 +145,6 @@
   text-align: left;
 }
 
-.new-arrivals h2 {
-  margin-bottom: 20px;
-}
 
 .new-arrivals-container {
   display: flex;
@@ -158,52 +154,34 @@
 
 }
 
-.new-arrivals-container .card {
+.new-arrivals-container > * {
   width: calc(25% - 20px);
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  /*text-align: center;*/
-  height: auto;
-  margin-bottom: 40px;
-}
-
-.card img {
-  width: 100%;
-  height: 70%;
-  border-radius: 10px 10px 0 0;
-}
-
-.card h3 {
-  margin: 10px 0;
-}
-
-.card p.price {
-  font-weight: bold;
 }
 
 
 /* fin new arrival */
 
 @media screen and (max-width: 1024px) {
-  .new-arrivals .card {
+  .new-arrivals-container > * {
     width: calc(33.33% - 20px);
   }
-  main{
+
+  main {
     margin-top: 55px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .top-items
-  {
+  .top-items {
     height: auto;
   }
+
   .article {
     width: 70%;
     height: 80vh;
   }
-  .new-arrivals .card {
+
+  .new-arrivals-container > * {
     width: calc(50% - 20px);
   }
 }
@@ -229,6 +207,7 @@
   .article {
     width: 98%;
     height: 70vh;
+    padding: 15px;
   }
 
   .description {
@@ -237,16 +216,16 @@
     flex-wrap: wrap;
   }
 
-  .description h3
-  {
+  .description h3 {
     font-size: 1.3rem;
   }
-  .article .description button
-  {
+
+  .article .description button {
     width: 160px;
     padding: 10px;
   }
-  .new-arrivals .card {
+
+  .new-arrivals-container > * {
     width: 95%;
   }
 }

@@ -1,9 +1,6 @@
 <header>
   <div class="top-bar">
   <div class="burger" [ngClass]="activeMenu ? 'toggle' : ''" (click)="toggleMenu()">
-   <!-- <span></span>
-    <span></span>
-    <span></span>-->
     <fa-icon [icon]="activeMenu ? faXmark:faBars" style=""></fa-icon>
   </div>
     <div class="logo" style="">
@@ -21,7 +18,9 @@
 
 
   <div class="cart" style="">
-    <a [routerLink]="['/home']"><fa-icon style="font-size: 23px" [icon]="faBagShopping"></fa-icon></a>
+    <a [routerLink]="['/home']">
+      <fa-icon [icon]="faBagShopping"></fa-icon>
+    </a>
   </div>
   </div>
   <div class="nav-bar">
