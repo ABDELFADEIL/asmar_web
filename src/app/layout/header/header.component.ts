@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {faBagShopping, faBars, faHouse, faSearch, faXmark} from '@fortawesome/free-solid-svg-icons';
+import {faBagShopping, faBars, faHouse, faSearch, faUser, faXmark} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit{
   faXmark = faXmark;
   activeMenu: boolean = false;
   faSearch = faSearch;
+  faUser = faUser;
 
   toggleMenu() {
     this.activeMenu = !this.activeMenu;

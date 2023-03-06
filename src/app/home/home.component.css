@@ -156,6 +156,8 @@
 
 .new-arrivals-container > * {
   width: calc(25% - 20px);
+  display: flex;
+  justify-content: center;
 }
 
 

@@ -12,16 +12,24 @@
     </div>
     <form class="search-form" style="">
       <input type="text" placeholder="Recherche..." style="">
-      <button type="submit"><fa-icon [icon]="faSearch" style=""></fa-icon></button>
+      <button type="submit">
+        <fa-icon [icon]="faSearch" style=""></fa-icon>
+      </button>
     </form>
-  <hr>
+    <hr>
 
 
-  <div class="cart" style="">
-    <a [routerLink]="['/home']">
-      <fa-icon [icon]="faBagShopping"></fa-icon>
-    </a>
-  </div>
+    <div class="cart">
+      <a [routerLink]="['/mon-compte']">
+        <fa-icon [icon]="faUser"></fa-icon>
+        <!--
+              <small style="margin-left: 3px;font-size: small">Bonjour Abdelfadeil</small>
+        -->
+      </a>
+      <a [routerLink]="['/panier']">
+        <fa-icon [icon]="faBagShopping"></fa-icon>
+      </a>
+    </div>
   </div>
   <div class="nav-bar">
     <nav [ngClass]="activeMenu ? 'menu-active nav-active' : ''">
@@ -29,11 +37,11 @@
       <fa-icon style="font-size: 23px" [icon]="faHouse"></fa-icon>
 -->
       <ul>
-        <li routerLinkActive="active"><a [routerLink]="['/home']">Alimantaires</a></li>
-        <li routerLinkActive="active"><a [routerLink]="['/parfum']">Parfums</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/alimantaires']">Alimantaires</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/parfums']">Parfums</a></li>
         <li routerLinkActive="active"><a [routerLink]="['/soins-corps']">Soins & corps</a></li>
-        <li routerLinkActive="active"><a [routerLink]="['/vetement']">Vêtements</a></li>
-        <li routerLinkActive="active"><a [routerLink]="['/telephonie']">Téléphonie & accessoires</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/vetements']">Vêtements</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/electroniques']">Téléphonie & accessoires</a></li>
       </ul>
     </nav>
   </div>

@@ -66,9 +66,17 @@ nav ul li a {
 
 }
 
-.cart a {
+.cart {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-left: 5px;
+}
+
+.cart a fa-icon {
+  color: var(--color-main-dark);
+  font-size: 20px;
 }
 
 nav ul li a:hover, .cart a:hover {
@@ -92,10 +100,7 @@ nav ul li a:hover, .cart a:hover {
   font-size: 2rem;
   text-shadow: -2px -2px #558ABB;
 }
-.cart a, .cart-menu a {
-  color: var(--color-main-dark);
-  font-size: 23px;
-}
+
 
 .burger {
   display: none;
@@ -352,7 +357,7 @@ header .nav-bar
     height: 1px;
     background: var(--color-main-dark-light);
     border: none;
-    width: 115%;
+    width: 120%;
     padding-left: 0;
     margin-left: -20px;
     padding-right: 0;
