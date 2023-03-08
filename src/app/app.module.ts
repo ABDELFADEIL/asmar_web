@@ -45,6 +45,8 @@ import {SearchModule} from "./modules/search/search.module";
     FontAwesomeModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  exports: [],
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }

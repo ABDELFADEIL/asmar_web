@@ -84,24 +84,6 @@ nav ul li a:hover, .cart a:hover {
 }
 
 
-.logo {
-  flex-basis: 20%;
-  text-decoration: none;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  font-family: 'Archivo Black', sans-serif;
-  font-weight: bold;
-  color: var(--color-main-dark);
-}
-.logo span {
-  color: var(--color-gold);
-  text-transform: uppercase;
-  font-family: 'Bungee Inline', cursive;
-  font-size: 2rem;
-  text-shadow: -2px -2px #558ABB;
-}
-
-
 .burger {
   display: none;
   cursor: pointer;
