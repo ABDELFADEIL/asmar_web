@@ -11,10 +11,10 @@
       </div>
     </div>
     <form class="search-form" style="">
-      <input type="text" placeholder="Recherche..." style="">
-      <button type="submit">
-        <fa-icon [icon]="faSearch" style=""></fa-icon>
-      </button>
+      <input #term placeholder="Recherche..." style="" type="text">
+      <a (click)="searchItems(term.value)" class="search">
+        <fa-icon [icon]="faSearch"></fa-icon>
+      </a>
     </form>
     <hr>
 

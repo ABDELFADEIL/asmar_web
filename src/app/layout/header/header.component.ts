@@ -1,12 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {faBagShopping, faBars, faHouse, faSearch, faUser, faXmark} from '@fortawesome/free-solid-svg-icons';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements OnInit {
   faBagShopping = faBagShopping;
   faHouse = faHouse;
   faBars = faBars;
@@ -15,11 +16,14 @@ export class HeaderComponent implements OnInit{
   faSearch = faSearch;
   faUser = faUser;
 
+  constructor(private router: Router) {
+  }
+
   toggleMenu() {
     this.activeMenu = !this.activeMenu;
     const main = document.querySelector('main') as HTMLElement;
     const nav = document.querySelector('.nav-bar') as HTMLElement;
-    if (this.activeMenu){
+    if (this.activeMenu) {
       nav.style.padding = '10px';
       nav.style.height = 'auto';
       if (window.innerWidth > 380) {
@@ -55,11 +59,16 @@ export class HeaderComponent implements OnInit{
           nav.style.padding = '10px';
           nav.style.height = 'auto';
         }
-      }else {
+      } else {
         main.style.marginTop = '115px';
         nav.style.padding = '10px';
         nav.style.height = 'auto';
       }
     });
+  }
+
+  searchItems(term: string) {
+    console.log(term)
+    this.router.navigateByUrl('/search');
   }
 }

@@ -8,7 +8,6 @@ import {FooterComponent} from './layout/footer/footer.component';
 import {HomeComponent} from "./home/home.component";
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {NotFoundComponent} from './core/not-found/not-found.component';
-import {MainItemCardComponent} from './shared/main-item-card/main-item-card.component';
 import {ShoppingCartModule} from "./modules/shopping-cart/shopping-cart.module";
 import {UserAccountModule} from "./modules/user-account/user-account.module";
 import {AuthModule} from "./auth/auth.module";
@@ -19,6 +18,7 @@ import {ElectronicsModule} from "./modules/electronics/electronics.module";
 import {FashionModule} from "./modules/fashion/fashion.module";
 import {PerfumeModule} from "./modules/perfume/perfume.module";
 import {SearchModule} from "./modules/search/search.module";
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -27,11 +27,11 @@ import {SearchModule} from "./modules/search/search.module";
     FooterComponent,
     HomeComponent,
     NotFoundComponent,
-    MainItemCardComponent,
   ],
   imports: [
     BrowserModule,
     AuthModule,
+    SharedModule,
     UserAccountModule,
     ShoppingCartModule,
     AlimentaryModule,

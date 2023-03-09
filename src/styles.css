@@ -5,7 +5,7 @@
   --color-main-dark: #003B49;
   --color-main-dark-light: rgba(0, 59, 73, 0.5);
   --color-gold: #F4D19E;
-
+  --color-bg-light: rgba(0, 59, 73, 0.1);
   --color-txt: #F4D19E;
   --color-main: #003B49;
   /* --color-txt: #33011f; /* #003B49 */
@@ -117,6 +117,23 @@ a {
   vertical-align: -0.185em;
 }
 
+.alert-warning {
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+
+.form-control {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+
 .form-container {
   display: flex;
   justify-content: flex-start;
@@ -131,7 +148,7 @@ a {
   /* transform: translateY(10%);*/
   min-height: 630px;
   padding-bottom: 20px;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow-2);
 }
 
 .form-container .loginLogo {

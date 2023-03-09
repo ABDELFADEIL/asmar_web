@@ -182,7 +182,7 @@ input[type="checkbox"] {
   outline: none;
 }
 
-.search-form button[type="submit"] {
+.search-form a.search {
   position: absolute;
   right: 0;
   border: none;
@@ -194,9 +194,10 @@ input[type="checkbox"] {
   padding: 5px;
   cursor: pointer;
   width: 45px;
+  text-align: center;
 }
 
-.search-form button[type="submit"]:hover {
+.search-form a.search:hover {
   cursor: pointer;
 }
 
@@ -320,7 +321,7 @@ header .nav-bar
     height: 35px;
   }
 
-  .search-form button[type="submit"] {
+  .search-form a.search {
     padding: 5px;
 
   }
